@@ -13,6 +13,7 @@ public class Note {
     private Date date;
     private State state;
     private String content;
+    private int pri = 0;
 
     public Note(long id) {
         this.id = id;
@@ -40,5 +41,13 @@ public class Note {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public void setPri(int pri) {
+        this.pri = pri;
+    }
+
+    public int getPri() {
+        return pri;
     }
 }

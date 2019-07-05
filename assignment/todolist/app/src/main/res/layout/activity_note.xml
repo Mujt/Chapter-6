@@ -23,4 +23,29 @@
         android:layout_marginTop="20dp"
         android:text="@string/confirm" />
 
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/pri2"
+            android:background="@color/red"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"/>
+        <Button
+            android:id="@+id/pri1"
+            android:background="@color/green"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"/>
+
+        <Button
+            android:id="@+id/pri0"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:layout_marginLeft="50dp"/>
+    </LinearLayout>
 </LinearLayout>

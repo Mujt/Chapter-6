@@ -64,6 +64,12 @@ public class NoteViewHolder extends RecyclerView.ViewHolder {
             }
         });
 
+        if (note.getPri() == 2) {
+            itemView.setBackgroundColor(Color.RED);
+        } else if (note.getPri() == 1) {
+            itemView.setBackgroundColor(Color.GREEN);
+        }
+
         if (note.getState() == State.DONE) {
             contentText.setTextColor(Color.GRAY);
             contentText.setPaintFlags(contentText.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
